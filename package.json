@@ -1,0 +1,23 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "\" to do list\"",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dardangjoka/toDoList.git"
+  },
+  "author": "Dardan Gjoka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dardangjoka/toDoList/issues"
+  },
+  "homepage": "https://github.com/dardangjoka/toDoList#readme"
+}
