@@ -1,0 +1,22 @@
+<h3>Add Todo</h3>
+<form method="POST" action="/todos/add">
+   <div>
+      <label>Todo title: </label>
+      <input type="text" name="title" placeholder="Add title">
+   </div>
+   <div>
+      <label>Todo description: </label>
+      <textarea name="description" placeholder="Add description">
+      </textarea>
+   </div>
+   <button type="submit">Submit</button>
+</form>
+
+<ol>
+    <% docs.map(function(doc){ %>
+        <li> <%= doc.title+ '  '+ doc.description %> <a href="/todos/<%= doc._id %>" > shows<a href="/todos/edit/<%= doc._id %>"> edit</a>  <a href="/todos/delate/<%= doc._id %>">delate</a> </li>
+
+
+   <% }); %>
+</ol>
+
