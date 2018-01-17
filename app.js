@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.set('view engine', 'ejs');
-
+app.use(express.static(__dirname + '/public'));
 // connecting to mongodb
 const MongoClient=require('mongodb').MongoClient;
 
@@ -103,7 +103,6 @@ app.get('/todos/delate/:id',function(req,res){
   
 });
 
-app.listen(3000, function()
-{
-    console.log("running at http://localhost:300");
+app.listen(30001, function(){
+    console.log("running at http://localhost:3000");
 });
